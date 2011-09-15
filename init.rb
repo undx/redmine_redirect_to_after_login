@@ -14,7 +14,7 @@ end
 module Hooks
   class Hooks < Redmine::Hook::ViewListener
      def controller_account_success_authentication_after(context={})
-         redirect_url = Setting[:plugin_redmine_jump_to_after_redirect][:redirect]
+         redirect_url = Setting[:plugin_redirect_to_after_login][:redirect]
          context[:request].params[:back_url] = redirect_url
          return ''
      end
