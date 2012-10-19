@@ -1,4 +1,0 @@
-= redirect_to_after_login - Redmine plugin
-
-This plugin redirects the user, just after he has logged, to the URL defined in settings.
-If the redirect url is not defined (default), the behaviour is as usual(My Page).
